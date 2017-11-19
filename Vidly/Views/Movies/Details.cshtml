@@ -11,7 +11,7 @@
 
 <ul>
     <li>Genre: @Model.Genre</li>
-    <li>Release Date: @Model.ReleaseDate.Value.ToString("MMMM yyyy")</li>
-    <li>Date Added: @Model.DateAdded.Value.ToShortDateString()</li>
+    <li>Release Date: @Model.ReleaseDate.Value.ToLongDateString()</li>
+    <li>Date Added: @Model.DateAdded.Value.ToLongDateString()</li>
     <li>In Stock: @Model.Stock</li>
 </ul>

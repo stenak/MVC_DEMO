@@ -36,9 +36,6 @@ namespace Vidly.Controllers
                 return HttpNotFound();
 
             return View(movie);
-
-
-
         }
 
         // GET: Movies/Random

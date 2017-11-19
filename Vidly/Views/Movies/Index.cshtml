@@ -22,7 +22,7 @@
         <tr>
             <td>@Html.ActionLink(movie.Name, "Details", "Movies", new {id = movie.Id}, null)</td>
             <td>@movie.Genre</td>
-            <td>@movie.ReleaseDate.Value.ToString("MMMM yyyy")</td>
+            <td>@movie.ReleaseDate.Value.ToLongDateString()</td>
             <td>@movie.Stock</td>
         </tr>
     }
