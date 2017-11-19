@@ -1,4 +1,5 @@
-﻿@model Vidly.Models.Customer
+﻿@using Microsoft.Ajax.Utilities
+@model Vidly.Models.Customer
 
 @{
     ViewBag.Title = Model.Name;
@@ -8,3 +9,10 @@
 <span>@Html.ActionLink("<< Customers", "Index", "Customers")</span>
 
 <h2>@Model.Name</h2>
+<ul>
+    <li>Membership Type: @Model.MembershipType.Name</li>
+    @if( Model.BirthDate != null) {
+
+    <li>Birth Date: @Model.BirthDate.Value.ToShortDateString()</li>
+    }
+</ul>

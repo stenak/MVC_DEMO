@@ -202,6 +202,22 @@
     <Compile Include="Migrations\201711181923390_UpdateMembershipTypeName.Designer.cs">
       <DependentUpon>201711181923390_UpdateMembershipTypeName.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201711181932474_DeleteBirthYear.cs" />
+    <Compile Include="Migrations\201711181932474_DeleteBirthYear.Designer.cs">
+      <DependentUpon>201711181932474_DeleteBirthYear.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201711181933477_DeleteBirthYearFromCustomers.cs" />
+    <Compile Include="Migrations\201711181933477_DeleteBirthYearFromCustomers.Designer.cs">
+      <DependentUpon>201711181933477_DeleteBirthYearFromCustomers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201711181942381_AddBirthDateToCustomers.cs" />
+    <Compile Include="Migrations\201711181942381_AddBirthDateToCustomers.Designer.cs">
+      <DependentUpon>201711181942381_AddBirthDateToCustomers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201711191200282_AddMoviesTable.cs" />
+    <Compile Include="Migrations\201711191200282_AddMoviesTable.Designer.cs">
+      <DependentUpon>201711191200282_AddMoviesTable.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Customer.cs" />
@@ -313,6 +329,18 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201711181923390_UpdateMembershipTypeName.resx">
       <DependentUpon>201711181923390_UpdateMembershipTypeName.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201711181932474_DeleteBirthYear.resx">
+      <DependentUpon>201711181932474_DeleteBirthYear.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201711181933477_DeleteBirthYearFromCustomers.resx">
+      <DependentUpon>201711181933477_DeleteBirthYearFromCustomers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201711181942381_AddBirthDateToCustomers.resx">
+      <DependentUpon>201711181942381_AddBirthDateToCustomers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201711191200282_AddMoviesTable.resx">
+      <DependentUpon>201711191200282_AddMoviesTable.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
