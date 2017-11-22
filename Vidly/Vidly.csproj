@@ -160,9 +160,9 @@
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\CustomersController.cs" />
+    <Compile Include="Controllers\FilmsController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
-    <Compile Include="Controllers\MoviesController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -226,17 +226,87 @@
     <Compile Include="Migrations\201711191437521_fix1.Designer.cs">
       <DependentUpon>201711191437521_fix1.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201711192131464_AddGenreTable.cs" />
+    <Compile Include="Migrations\201711192131464_AddGenreTable.Designer.cs">
+      <DependentUpon>201711192131464_AddGenreTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201711192132452_DeleteGenreFromMovies.cs" />
+    <Compile Include="Migrations\201711192132452_DeleteGenreFromMovies.Designer.cs">
+      <DependentUpon>201711192132452_DeleteGenreFromMovies.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201711192137123_DeleteGenreFromMovieModel.cs" />
+    <Compile Include="Migrations\201711192137123_DeleteGenreFromMovieModel.Designer.cs">
+      <DependentUpon>201711192137123_DeleteGenreFromMovieModel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201711192140186_ConnectGenreToMovies.cs" />
+    <Compile Include="Migrations\201711192140186_ConnectGenreToMovies.Designer.cs">
+      <DependentUpon>201711192140186_ConnectGenreToMovies.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201711192144494_DropGenre_ID.cs" />
+    <Compile Include="Migrations\201711192144494_DropGenre_ID.Designer.cs">
+      <DependentUpon>201711192144494_DropGenre_ID.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201711192241401_FixGenreError.cs" />
+    <Compile Include="Migrations\201711192241401_FixGenreError.Designer.cs">
+      <DependentUpon>201711192241401_FixGenreError.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201711192251055_Fixing.cs" />
+    <Compile Include="Migrations\201711192251055_Fixing.Designer.cs">
+      <DependentUpon>201711192251055_Fixing.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201711192309129_CreateGnr.cs" />
+    <Compile Include="Migrations\201711192309129_CreateGnr.Designer.cs">
+      <DependentUpon>201711192309129_CreateGnr.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201711192312109_AddGnrToMovieModel.cs" />
+    <Compile Include="Migrations\201711192312109_AddGnrToMovieModel.Designer.cs">
+      <DependentUpon>201711192312109_AddGnrToMovieModel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201711192322542_PopulateGenres.cs" />
+    <Compile Include="Migrations\201711192322542_PopulateGenres.Designer.cs">
+      <DependentUpon>201711192322542_PopulateGenres.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201711200027232_CleaningShit.cs" />
+    <Compile Include="Migrations\201711200027232_CleaningShit.Designer.cs">
+      <DependentUpon>201711200027232_CleaningShit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201711200033377_AddGenreType.cs" />
+    <Compile Include="Migrations\201711200033377_AddGenreType.Designer.cs">
+      <DependentUpon>201711200033377_AddGenreType.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201711200043327_AddFilm.cs" />
+    <Compile Include="Migrations\201711200043327_AddFilm.Designer.cs">
+      <DependentUpon>201711200043327_AddFilm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201711200044593_AddFilmDb.cs" />
+    <Compile Include="Migrations\201711200044593_AddFilmDb.Designer.cs">
+      <DependentUpon>201711200044593_AddFilmDb.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201711200052558_AddZanr.cs" />
+    <Compile Include="Migrations\201711200052558_AddZanr.Designer.cs">
+      <DependentUpon>201711200052558_AddZanr.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201711200056317_PopulateZanr.cs" />
+    <Compile Include="Migrations\201711200056317_PopulateZanr.Designer.cs">
+      <DependentUpon>201711200056317_PopulateZanr.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201711200107178_AddedDataAn.cs" />
+    <Compile Include="Migrations\201711200107178_AddedDataAn.Designer.cs">
+      <DependentUpon>201711200107178_AddedDataAn.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Customer.cs" />
+    <Compile Include="Models\Film.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
     <Compile Include="Models\MembershipType.cs" />
-    <Compile Include="Models\Movie.cs" />
+    <Compile Include="Models\Min18YearsIfAMember.cs" />
+    <Compile Include="Models\Zanr.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
     <Compile Include="ViewModels\CustomerFormViewModel.cs" />
-    <Compile Include="ViewModels\RandomMovieViewModel.cs" />
+    <Compile Include="ViewModels\FilmFormViewModel.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\bootstrap-lumen.css" />
@@ -295,13 +365,13 @@
     <Content Include="Views\Manage\VerifyPhoneNumber.cshtml" />
     <Content Include="Views\Shared\Lockout.cshtml" />
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
-    <Content Include="Views\Movies\Random.cshtml" />
     <Content Include="Views\Shared\_NavBar.cshtml" />
-    <Content Include="Views\Movies\Index.cshtml" />
+    <Content Include="Views\Films\Index.cshtml" />
     <Content Include="Views\Customers\Index.cshtml" />
     <Content Include="Views\Customers\Details.cshtml" />
-    <Content Include="Views\Movies\Details.cshtml" />
+    <Content Include="Views\Films\Details.cshtml" />
     <Content Include="Views\Customers\CustomerForm.cshtml" />
+    <Content Include="Views\Films\FilmForm.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -358,6 +428,57 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201711191437521_fix1.resx">
       <DependentUpon>201711191437521_fix1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201711192131464_AddGenreTable.resx">
+      <DependentUpon>201711192131464_AddGenreTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201711192132452_DeleteGenreFromMovies.resx">
+      <DependentUpon>201711192132452_DeleteGenreFromMovies.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201711192137123_DeleteGenreFromMovieModel.resx">
+      <DependentUpon>201711192137123_DeleteGenreFromMovieModel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201711192140186_ConnectGenreToMovies.resx">
+      <DependentUpon>201711192140186_ConnectGenreToMovies.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201711192144494_DropGenre_ID.resx">
+      <DependentUpon>201711192144494_DropGenre_ID.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201711192241401_FixGenreError.resx">
+      <DependentUpon>201711192241401_FixGenreError.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201711192251055_Fixing.resx">
+      <DependentUpon>201711192251055_Fixing.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201711192309129_CreateGnr.resx">
+      <DependentUpon>201711192309129_CreateGnr.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201711192312109_AddGnrToMovieModel.resx">
+      <DependentUpon>201711192312109_AddGnrToMovieModel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201711192322542_PopulateGenres.resx">
+      <DependentUpon>201711192322542_PopulateGenres.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201711200027232_CleaningShit.resx">
+      <DependentUpon>201711200027232_CleaningShit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201711200033377_AddGenreType.resx">
+      <DependentUpon>201711200033377_AddGenreType.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201711200043327_AddFilm.resx">
+      <DependentUpon>201711200043327_AddFilm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201711200044593_AddFilmDb.resx">
+      <DependentUpon>201711200044593_AddFilmDb.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201711200052558_AddZanr.resx">
+      <DependentUpon>201711200052558_AddZanr.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201711200056317_PopulateZanr.resx">
+      <DependentUpon>201711200056317_PopulateZanr.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201711200107178_AddedDataAn.resx">
+      <DependentUpon>201711200107178_AddedDataAn.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

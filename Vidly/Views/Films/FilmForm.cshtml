@@ -1,0 +1,29 @@
+﻿@model Vidly.ViewModels.FilmFormViewModel
+
+@{
+    ViewBag.Title = Model.Title;
+}
+
+<h2>@Model.Title</h2>
+
+@using (Html.BeginForm("Save", "Films"))
+{
+    <div class="form-group">
+        @Html.LabelFor(m => m.Film.Name)
+        @Html.TextBoxFor(m => m.Film.Name, new { @class = "form-control" })
+    </div>
+    <div class="form-group">
+        @Html.LabelFor(m => m.Film.ReleaseDate)
+        @Html.TextBoxFor(m => m.Film.ReleaseDate, "{0:d MMM yyyy}", new { @class = "form-control" })
+    </div>
+    <div class="form-group">
+        @Html.LabelFor(m => m.Film.ZanrId)
+        @Html.DropDownListFor(m => m.Film.ZanrId, new SelectList(Model.Zanrs, "Id", "Name"), "", new { @class = "form-control" })
+    </div>
+    <div class="form-group">
+        @Html.LabelFor(m => m.Film.Stock)
+        @Html.TextBoxFor(m => m.Film.Stock, new { @class = "form-control" })
+    </div>
+    @Html.HiddenFor(m => m.Film.Id)
+    <button type="submit" class="btn btn-primary">Save</button>
+}

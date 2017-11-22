@@ -15,10 +15,26 @@
 .dl-horizontal dt {
     white-space: normal;
 }
-
+table a {
+    text-decoration: none !important;
+}
+table a:hover {
+    text-decoration: underline !important;
+}
 /* Set width on the form input elements since they're 100% wide by default */
 input,
 select,
 textarea {
     max-width: 280px;
+}
+
+.field-validation-error {
+    color: red;
+}
+.input-validation-error {
+    border: 1px solid red;
+}
+.validation-summary-errors {
+    color: red;
+    list-style: disc;
 }
